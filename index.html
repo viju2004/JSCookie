@@ -6,9 +6,8 @@
                 with(document.Form1)
                 {
             
-                document.cookie=""+Name.value+"="+Value.value+";"+"Path="+Path.value+""+new Date(2020,11,26).toUTCString();
-
-                alert("Cookies Deleted");
+                    document.cookie=""+Name.value+"="+Value.value+";"+"Path="+Path.value+";expires="+new Date(2020,11,26).toUTCString();
+                    alert("Cookies Deleted");
                     Name.value="";
                     Value.value="";
                     Path.value="";
@@ -18,17 +17,12 @@
             {
                 with(document.Form1)
                 {
-
                     document.cookie=""+Name.value+"="+Value.value+";"+"Path="+Path.value;
                     alert("Cookies Created");
                     Name.value="";
                     Value.value="";
                     Path.value="";
-
-
-
-                }
-                
+                }  
             }
         </script>
         
